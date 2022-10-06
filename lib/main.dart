@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         primaryColor: COLOR_WHITE,  textTheme: screenWidth < 500 ? TEXT_THEME_DEFAULT : TEXT_THEME_SMALL, 
         fontFamily: "Montserrat", colorScheme: ColorScheme.fromSwatch().copyWith(secondary: COLOR_DARK_BLUE)
       ),
-      home: LandingScreen(),
+      home: const LandingScreen(),
     );
   }
 }
