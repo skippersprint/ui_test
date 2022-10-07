@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_test/screens/LandingScreen.dart';
+import 'package:ui_test/screens/house_one.dart';
+import 'package:ui_test/screens/ui_test.dart';
 import 'dart:ui';
 
 import 'package:ui_test/utils/constants.dart';
@@ -16,10 +18,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'UI TEST APP',
       theme: ThemeData(
-        primaryColor: COLOR_WHITE,  textTheme: screenWidth < 500 ? TEXT_THEME_DEFAULT : TEXT_THEME_SMALL, 
-        fontFamily: "Montserrat", colorScheme: ColorScheme.fromSwatch().copyWith(secondary: COLOR_DARK_BLUE)
-      ),
-      home: const LandingScreen(),
+          primaryColor: COLOR_WHITE,
+          textTheme: screenWidth < 500 ? TEXT_THEME_DEFAULT : TEXT_THEME_SMALL,
+          fontFamily: "Montserrat",
+          colorScheme:
+              ColorScheme.fromSwatch().copyWith(secondary: COLOR_DARK_BLUE)),
+      home: const HouseScreen(),
     );
   }
 }

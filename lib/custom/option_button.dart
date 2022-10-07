@@ -18,19 +18,24 @@ class OptionButton extends StatelessWidget {
             backgroundColor: MaterialStateProperty.all<Color>(COLOR_BLACK),
             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20)))),
+                    borderRadius: BorderRadius.circular(30)))),
         onPressed: null,
-        child: Row(children: [
-          Icon(
-            icon,
-            color: COLOR_WHITE,
-          ),
-          addHorizontalSpace(10),
-          Text(
-            text!,
-            style: const TextStyle(color: COLOR_WHITE),
-          )
-        ]),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 6),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+            Icon(
+              icon,
+              color: COLOR_WHITE,
+            ),
+            addHorizontalSpace(10),
+            Text(
+              text!,
+              style: const TextStyle(color: COLOR_WHITE),
+            )
+          ]),
+        ),
       ),
     );
   }
